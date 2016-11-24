@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 " plugins go here
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'christoomey/vim-tmux-navigator'
+
+" TODO: get ctrp working
 "Plugin 'ctrlpvim/ctrlp'
 
 " ignore some files I know clog up the works
