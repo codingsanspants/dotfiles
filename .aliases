@@ -1,0 +1,12 @@
+alias "dev"="cd ~/development"
+alias "random_cow_fortune"="fortune | cowsay -f $(find /usr/share/cowsay/cows/ -type f | shuf | head -n 1)"
+
+alias "r"="source ~/.bashrc"
+alias "c"="clear"
+alias "v"="vim"
+alias "g"="git"
+
+
+function mkcd() {
+  mkdir -pv $1 && cd $1
+}

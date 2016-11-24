@@ -1,0 +1,18 @@
+[user]
+	name = coding sans pants
+	email = codingsanspants@gmail.com
+[core]
+	editor = vim
+
+[alias]
+	purge = reset --hard
+	undo = "reset HEAD~1"
+	new = checkout -b 
+  	co = checkout
+  	br = branch
+  	st = status
+	pom = pull origin master
+	update = fetch --all
+	ls = diff --stat --color HEAD..master
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
