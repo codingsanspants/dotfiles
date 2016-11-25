@@ -127,6 +127,10 @@ fi
 
 export PATH=$PATH:/usr/local/go/bin
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 source /home/csp/.aliases
 
 random_cow_fortune
+

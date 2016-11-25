@@ -18,3 +18,5 @@ alias "up3"="cd ../../../"
 alias "catimg"="~/development/catimg/catimg"
 alias "yay"="catimg -w 80 ~/Pictures/yay.jpeg"
 alias "yayaya"="paste <(yay) <(yay) <(yay)"
+
+alias "chuck"="curl --silent --request GET   --url http://api.icndb.com/jokes/random | jq '.value.joke'"
