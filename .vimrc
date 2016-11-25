@@ -14,17 +14,19 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-syntastic/syntastic'
 
-" TODO: get ctrp working
-"Plugin 'ctrlpvim/ctrlp'
+Plugin 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_show_hidden = 1
 
+" TODO: get ctrp ignores
 " ignore some files I know clog up the works
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\(.git|logs|node_modules|bower_components|tmp)$',
-  \ 'file': '\v\.(swp|so)$',
-  \ 'link': '',
-  \ }
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+"let g:ctrlp_custom_ignore = {
+"  \ 'dir':  '\v[\/]\(.git|logs|node_modules|bower_components|tmp)$',
+"  \ 'file': '\v\.(swp|so)$',
+"  \ 'link': '',
+"  \ }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
