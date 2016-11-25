@@ -10,3 +10,11 @@ alias "g"="git"
 function mkcd() {
   mkdir -pv $1 && cd $1
 }
+
+alias "up"="cd ../"
+alias "up2"="cd ../../"
+alias "up3"="cd ../../../"
+
+alias "catimg"="~/development/catimg/catimg"
+alias "yay"="catimg -w 80 ~/Pictures/yay.jpeg"
+alias "yayaya"="paste <(yay) <(yay) <(yay)"
