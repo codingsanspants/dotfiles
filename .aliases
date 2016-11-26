@@ -1,14 +1,14 @@
 alias "dev"="cd ~/development"
-alias "random_cow_fortune"="fortune | cowsay -f $(find /usr/share/cowsay/cows/ -type f | shuf | head -n 1)"
 alias "tmux"="tmux -2"
 
+# shortcuts
 alias "r"="source ~/.bashrc"
 alias "c"="clear"
 alias "v"="vim"
 alias "g"="git"
 alias "t"="tmux"
 
-
+# directories
 function mkcd() {
   mkdir -pv $1 && cd $1
 }
@@ -17,8 +17,13 @@ alias "up"="cd ../"
 alias "up2"="cd ../../"
 alias "up3"="cd ../../../"
 
+# golang
+alias "gorun"="go run main.go"
+alias "gopants"="cd ~/development/golang/src/github.com/codingsanspants"
+
+# fun
 alias "catimg"="~/development/catimg/catimg"
+alias "chuck"="curl --silent --request GET   --url http://api.icndb.com/jokes/random | jq '.value.joke'"
+alias "random_cow_fortune"="fortune | cowsay -f $(find /usr/share/cowsay/cows/ -type f | shuf | head -n 1)"
 alias "yay"="catimg -w 80 ~/Pictures/yay.jpeg"
 alias "yayaya"="paste <(yay) <(yay) <(yay)"
-
-alias "chuck"="curl --silent --request GET   --url http://api.icndb.com/jokes/random | jq '.value.joke'"

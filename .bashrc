@@ -129,7 +129,9 @@ source "${GITAWAREPROMPT}/main.sh"
 # export PS1="ॐ \${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]☠  "
 export PS1="ॐ  \${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\${git_dirty/\*/ ✨ }\[$txtrst\]☠  "
 
-export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/development/golang
+export PATH=$PATH:/usr/local/go/bin:$GOROOT/bin:$GOPATH/bin
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 

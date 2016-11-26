@@ -14,19 +14,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
+
 Plugin 'vim-syntastic/syntastic'
+let g:syntastic_loc_list_height=5
+
 
 Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_show_hidden = 1
-
-" TODO: get ctrp ignores
-" ignore some files I know clog up the works
-"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-"let g:ctrlp_custom_ignore = {
-"  \ 'dir':  '\v[\/]\(.git|logs|node_modules|bower_components|tmp)$',
-"  \ 'file': '\v\.(swp|so)$',
-"  \ 'link': '',
-"  \ }
+let g:ctrlp_custom_ignore = '\.git\|vendor\|node_modules\|bower_components\|log\|tmp'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,3 +56,14 @@ autocmd FocusLost * :set number
 autocmd FocusGained * :set relativenumber
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
+
+" show white space characters
+set listchars=eol:¬,tab:>·,trail:~
+set list
+
+" tab spacing
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+filetype plugin indent on
